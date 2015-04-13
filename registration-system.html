@@ -31,11 +31,20 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-
   <div class="container-fluid">
-    <div class="col-md-3">
+    <div class="col-md-5">
+      <h3>Add a New Class</h3>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          {{> form}}
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <h3>Your Classes</h3>
       {{> list}}
     </div>
+
   </div>
 
 
@@ -44,18 +53,43 @@
 <template name="list">
   <div class="list-group">
     {{#each classes}}
-      <span href="#" class="list-group-item active">
-        <h4 class="list-group-item-heading">
-          {{this.name}}
-        </h4>
-        <p class="list-group-item-text">
-          {{this.title}}
-        </p>
+      <span class="list-group-item">
+        <div class="container-fluid">
+          <div class="col-md-8">
+            <h4 class="list-group-item-heading">
+              {{this.abbr}}
+            </h4>
+            <p class="list-group-item-text">
+              {{this.title}}
+            </p>
+          </div>
+          <div class="col-md-4">
+            <button class="drop-class btn btn-default btn-sm">
+              <i class="glyphicon glyphicon-remove"></i>
+              Drop class
+            </button>
+          </div>
+        </div>
       </span>
     {{/each}}
   </div>
 </template>
 
+
+
+<template name="form">
+  <form>
+    <div class="form-group">
+      <label for="class-abbr">Short Title</label>
+      <input type="text" class="form-control" id="class-abbr" placeholder="BA 350">
+    </div>
+    <div class="form-group">
+      <label for="class-title">Full Class Name</label>
+      <input type="text" class="form-control" id="class-title" placeholder="Management Information Systems">
+    </div>
+    <button type="submit" class="add-class btn btn-primary">Submit</button>
+  </form>
+</template>
 
 
 <template name="hello">
