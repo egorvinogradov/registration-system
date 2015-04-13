@@ -2,6 +2,35 @@ if (Meteor.isClient) {
 
   Students = new Mongo.Collection('students');
 
+  Accounts.onLogin(function(){
+    if (Meteor.user().services.google.email.split('@')[1] == 'lincolnucasf.edu') {
+        console.log(Meteor.user().services.google.email)
+    }
+  });
+
+  Template.list.helpers({
+    classes: function () {
+      return [
+        {
+          name: 'BA 360',
+          title: 'Management Information Systems'
+        },
+        {
+          name: 'MATH 15',
+          title: 'Finite Mathematics'
+        },
+        {
+          name: 'BA 300B',
+          title: 'Financial Accounting Foundations'
+        },
+        {
+          name: 'BA 301 I',
+          title: 'Managerial Economics'
+        }
+      ]
+    }
+  });
+
 
 
 
@@ -27,5 +56,3 @@ if (Meteor.isServer) {
     // code to run on server at startup
   });
 }
-
-
