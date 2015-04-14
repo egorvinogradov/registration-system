@@ -1,4 +1,4 @@
-LU = typeof LU === 'undefined' ? {} : LU;
+LU = if typeof LU == "undefined" then {} else LU
 
 LU.classes = [
   {
