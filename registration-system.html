@@ -62,6 +62,15 @@
             <p class="list-group-item-text">
               {{this.title}}
             </p>
+            <p class="list-group-item-text">
+              {{this.professor}}
+            </p>
+            <p class="list-group-item-text">
+              {{this.days}} {{time}}
+            </p>
+            <p class="list-group-item-text">
+              <a href="{{this.syllabus}}" target="_blank">Open syllabus</a>
+            </p>
           </div>
           <div class="col-md-4">
             <button class="drop-class btn btn-default btn-sm">
@@ -78,17 +87,16 @@
 
 
 <template name="form">
-  <form>
-    <div class="form-group">
-      <label for="class-abbr">Short Title</label>
-      <input type="text" class="form-control" id="class-abbr" placeholder="BA 350">
-    </div>
-    <div class="form-group">
-      <label for="class-title">Full Class Name</label>
-      <input type="text" class="form-control" id="class-title" placeholder="Management Information Systems">
-    </div>
-    <button type="submit" class="add-class btn btn-primary">Submit</button>
-  </form>
+  <div class="class-alert alert alert-danger alert-dismissible hidden" role="alert">
+    This class is already added
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="form-group">
+    <label for="class-input">Class Name</label>
+    <input type="text" class="form-control" id="class-input" placeholder="BA 350">
+  </div>
 </template>
 
 

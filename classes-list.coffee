@@ -1,4 +1,4 @@
-LU = if typeof LU == "undefined" then {} else LU
+@LU = @LU or {}
 
 LU.classes = [
   {

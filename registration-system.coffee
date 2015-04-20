@@ -1,10 +1,21 @@
-LU = if typeof LU == "undefined" then {} else LU
+@LU = @LU or {}
 
 class LU.App
+  
+  CLASS_INPUT_ID: "#class-input"
+  
+  MAX_AUTOCOMPLETE_RESULTS: 10
 
   getClasses: ->
     try classes = Meteor.user().profile.classes
-    classes
+    if classes
+      classes.reverse()
+    else
+      []
+
+  getClassByAbbr: (abbr) ->
+    _.find LU.classes, (item) =>
+      item.abbr is abbr
 
   dropClass: (classItem) ->
 
@@ -14,52 +25,67 @@ class LU.App
 
       Meteor.users.update { _id: Meteor.user()._id }, $set: "profile.classes": updatedClasses
 
-  addClass: (abbr, title) ->
+  addClass: (data) ->
 
-    if abbr and title
+    classes = Meteor.user().profile.classes or []
 
-      classes = Meteor.user().profile.classes or []
+    duplicate = _.find classes, (item) =>
+      item.abbr is data.abbr
 
-      for item, index in classes
-        if item is abbr
-          classIndex = index
-          break
+    if duplicate
+      $(".class-alert").removeClass("hidden")
+    else
+      classes.push data
 
-      newValue = 
-        abbr: abbr
-        title: title
+    Meteor.users.update { _id: Meteor.user()._id }, $set: "profile.classes": classes
 
-      if classIndex > -1
-        if confirm("This class is already added. Do you wand to update it?")
-          classes[classIndex] = newValue
-      else
-        classes.push newValue
+  initializeAutocomplete: ->
 
-      Meteor.users.update { _id: Meteor.user()._id }, $set: "profile.classes": classes
+    variants = LU.classes.map (item) =>
+      [
+        item.abbr
+        item.title
+        item.professor
+
+      ].join("|")
+
+    autocomplete = $(@CLASS_INPUT_ID).autocomplete
+
+      source: (request, response) =>
+        results = $.ui.autocomplete.filter variants, request.term
+        response results.slice(0, @MAX_AUTOCOMPLETE_RESULTS)
+
+      select: (e, ui) =>
+        abbr = ui.item.label.split("|")[0]
+        @addClass @getClassByAbbr abbr
+
+      close: (e) ->
+        $(e.target).val ""
 
 
-  onSubmitButtonClick: () ->
+    autocomplete.data("ui-autocomplete")._renderItem = (ul, item) ->
 
-    abbrInput = $("#class-abbr")
-    titleInput = $("#class-title")
+      values = item.label.split "|"
+      abbr = values[0]
+      title = values[1]
 
-    abbr = abbrInput.val().trim()
-    title = titleInput.val().trim()
+      template = """
+        <li>
+          <div class="autocomplete-abbr">#{abbr}</div>
+          <div class="autocomplete-title">#{title}</div>
+        </li>
+      """
 
-    @addClass abbr, title
+      item.value = abbr + " " + title
 
-    abbrInput.val ""
-    titleInput.val ""
+      $(template).appendTo(ul)
+        
+
 
 
 if Meteor.isClient
 
   LU.app = new (LU.App)
-
-#  Accounts.onLogin ->
-#    if Meteor.user().services.google.email.split("@")[1] == "lincolnucasf.edu"
-#      console.log Meteor.user().services.google.email
-
 
   Template.list.helpers
     classes: LU.app.getClasses
@@ -68,10 +94,21 @@ if Meteor.isClient
     "click .drop-class": ->
       LU.app.dropClass @
 
-  Template.form.events
-    "submit form": (e) ->
-      LU.app.onSubmitButtonClick e
-      e.preventDefault()
+  Template.form.rendered = ->
+    LU.app.initializeAutocomplete()
 
-#if Meteor.isServer
-#  Meteor.startup ->
+
+
+
+if Meteor.isServer
+
+  Meteor.startup ->
+
+    Accounts.validateLoginAttempt (login) ->
+      email = login.user.services.google.email
+      if email.split("@")[1] == "lincolnucasf.edu"
+        console.log("Successfull login:", email)
+        true
+      else
+        console.log("Failed login:", email)
+        false
