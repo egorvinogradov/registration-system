@@ -2,8 +2,9 @@
 
 class LU.App
   
-  CLASS_INPUT_ID: "#class-input"
-  
+  classes:
+    searchInput: ".b-heading__search-input"
+
   MAX_AUTOCOMPLETE_RESULTS: 10
 
   getClasses: ->
@@ -49,7 +50,7 @@ class LU.App
 
       ].join("|")
 
-    autocomplete = $(@CLASS_INPUT_ID).autocomplete
+    autocomplete = $(@classes.searchInput).autocomplete
 
       source: (request, response) =>
         results = $.ui.autocomplete.filter variants, request.term
@@ -87,15 +88,21 @@ if Meteor.isClient
 
   LU.app = new (LU.App)
 
+  Template.heading.helpers
+    loggedIn: ->
+      Meteor.user()
+    mobile: ->
+      $(window).width() < 400 # default mobile device width
+
+  Template.heading.rendered = ->
+    LU.app.initializeAutocomplete()
+
   Template.list.helpers
     classes: LU.app.getClasses
 
   Template.list.events
     "click .drop-class": ->
       LU.app.dropClass @
-
-  Template.form.rendered = ->
-    LU.app.initializeAutocomplete()
 
 
 
