@@ -6,16 +6,20 @@
 
 <body class="b-app">
 
-  {{> navbar}}
-  {{> heading}}
-  {{> list}}
+  <div class="b-container">
+    {{> navbar}}
+    {{> heading}}
+    {{> list}}
+  </div>
+
+  {{> footer}}
 
 </body>
 
 
 <template name="navbar">
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="b-navbar navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -97,7 +101,7 @@
 
 <template name="list">
 
-  <div class="container">
+  <div class="b-list container">
     {{#if classes.length}}
       <div class="list-group">
         {{#each classes}}
@@ -147,4 +151,27 @@
     {{/if}}
   </div>
 
+</template>
+
+
+
+<template name="footer">
+
+  <footer class="b-footer navbar-default">
+    <div class="container">
+      <div class="navbar-left">
+        <p class="navbar-text">
+          &copy; Lincoln University,
+          <a href="https://www.facebook.com/egorvinogradov" target="_blank">Egor Vinogradov</a>,
+          2015
+        </p>
+      </div>
+      <p class="navbar-right navbar-text">
+        <a href="https://github.com/egorvinogradov/registration-system" target="_blank">Source code</a>
+         is licensed under
+        <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons 4.0</a>
+      </p>
+    </div>
+  </footer>
+  
 </template>

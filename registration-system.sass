@@ -2,15 +2,31 @@
 
 $width-mobile: 400px
 
+html, body
+  height: 100%
+
 .container
   max-width: 960px !important
 
 .b-app
   overflow-y: scroll
 
+.b-container
+  min-height: 100%
+
+
+// Navbar
+
+.b-navbar
+
   .navbar-form
     border: 0
     box-shadow: none
+
+
+// Heading
+
+.b-heading
 
   @media screen and (max-width: $width-mobile)
     .navbar-form
@@ -24,7 +40,6 @@ $width-mobile: 400px
     background-clip: padding-box
     overflow: hidden
     margin-top: -2px
-    //max-width: calc(100% - 60px)
 
   .ui-menu-item
     box-shadow: inset 0 -1px 0 rgba(0,0,0,.1)
@@ -93,6 +108,17 @@ $width-mobile: 400px
   &.m-expanded
     @include transform(scaleY(1))
 
+
+// List
+
+.b-list
+  padding-bottom: 70px
+
 .b-list__button
   margin-top: 4px
 
+
+// Footer
+
+.b-footer
+  margin-top: -50px
