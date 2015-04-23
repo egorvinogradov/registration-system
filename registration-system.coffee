@@ -132,6 +132,9 @@ if Meteor.isClient
     "click .b-drop": ->
       LU.app.dropClass @
 
+  Template._loginButtonsLoggedOutSingleLoginButton.rendered = ->
+    $(".login-button.btn-Google").html("Sign in with @lincolnucasf.edu")
+
 
 
 
