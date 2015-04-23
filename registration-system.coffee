@@ -40,6 +40,10 @@ class LU.App
 
     Meteor.users.update { _id: Meteor.user()._id }, $set: "profile.classes": classes
 
+  getClassByAbbr: (abbr) ->
+    _.find LU.classes, (item) =>
+      item.abbr is abbr
+
   initializeAutocomplete: ->
 
     variants = LU.classes.map (item) =>
@@ -63,24 +67,28 @@ class LU.App
       close: (e) ->
         $(e.target).val ""
 
+    autocomplete.data("ui-autocomplete")._renderItem = $.proxy @renderAutocompleteItem, @
+    $(".ui-autocomplete").addClass("container-fluid");
 
-    autocomplete.data("ui-autocomplete")._renderItem = (ul, item) ->
+  renderAutocompleteItem: (autocomplete, item) ->
 
-      values = item.label.split "|"
-      abbr = values[0]
-      title = values[1]
+    abbr = item.label.split("|")[0]
+    data = @getClassByAbbr abbr
 
-      template = """
-        <li>
-          <div class="autocomplete-abbr">#{abbr}</div>
-          <div class="autocomplete-title">#{title}</div>
-        </li>
-      """
+    template = """
+        <div class="row">
+          <div class="col-sm-2 b-autocomplete__abbr">#{abbr}</div>
+          <div class="col-sm-5 b-autocomplete__title">#{data.title}</div>
+          <div class="col-sm-2 b-autocomplete__professor">#{data.professor}</div>
+          <small class="col-sm-3 text-muted b-autocomplete__time">
+            <span class="b-autocomplete__days">#{data.days.join(', ')}</span>
+            #{data.time}
+          </small>
+        </div>
+    """
 
-      item.value = abbr + " " + title
-
-      $(template).appendTo(ul)
-        
+    item.value = abbr + " " + data.title
+    $(template).appendTo(autocomplete)
 
 
 

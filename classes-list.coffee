@@ -6,8 +6,10 @@ LU.classes = [
     "title": "Survey of Business Foundations",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA300A_Germann_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Wed"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Dr. Germann"
   },
   {
@@ -15,8 +17,10 @@ LU.classes = [
     "title": "Survey of Business Foundations",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA300A_Ashurov_Sp15.pdf",
     "units": 3,
-    "days": "Th",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Thu"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Ashurov"
   },
   {
@@ -24,8 +28,10 @@ LU.classes = [
     "title": "Financial Accounting Foundations",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA300B_Tailab_Sp15.pdf",
     "units": 3,
-    "days": "Th",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Thu"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Mr. Tailab"
   },
   {
@@ -33,8 +39,10 @@ LU.classes = [
     "title": "Managerial Economics",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA301_Aityan_Sp15.pdf",
     "units": 3,
-    "days": "M",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Mon"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Aityan"
   },
   {
@@ -42,8 +50,10 @@ LU.classes = [
     "title": "Managerial Economics",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA301_Ashurov_Sp15.pdf",
     "units": 3,
-    "days": "Th",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Thu"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Ashurov"
   },
   {
@@ -51,8 +61,10 @@ LU.classes = [
     "title": "Principles of Management",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA302_Kruz_Sp15.pdf",
     "units": 3,
-    "days": "Sat",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Sat"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Dr. Kruz"
   },
   {
@@ -60,8 +72,10 @@ LU.classes = [
     "title": "Finance Management",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA303_Loh_Sp15.pdf",
     "units": 3,
-    "days": "T",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Tue"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Prof. Loh"
   },
   {
@@ -69,8 +83,10 @@ LU.classes = [
     "title": "Finance Management",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA303_Xu_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Xu"
   },
   {
@@ -78,8 +94,10 @@ LU.classes = [
     "title": "Marketing Management",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA304_Hess_Sp15.pdf",
     "units": 3,
-    "days": "M",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Mon"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Hess"
   },
   {
@@ -87,8 +105,10 @@ LU.classes = [
     "title": "Marketing Management",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA304_Hibshoosh_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "6:30 pm – 9:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "06:30 pm – 09:15 pm",
     "professor": "Dr. Hibshoosh"
   },
   {
@@ -96,8 +116,10 @@ LU.classes = [
     "title": "Project Management",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA305_Guerra_Sp15.pdf",
     "units": 3,
-    "days": "T",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Tue"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Dr. Guerra"
   },
   {
@@ -105,8 +127,10 @@ LU.classes = [
     "title": "Business Research Methodology",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA306_Anokhin_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Wed"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Dr. Anokhin"
   },
   {
@@ -114,8 +138,10 @@ LU.classes = [
     "title": "Business Research Methodology",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA306_Himelfarb_Sp15.pdf",
     "units": 3,
-    "days": "Sat",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Sat"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Himelfarb"
   },
   {
@@ -123,8 +149,10 @@ LU.classes = [
     "title": "Operations Management",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA307_Ashurov_Sp15.pdf",
     "units": 3,
-    "days": "T",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Tue"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Ashurov"
   },
   {
@@ -132,8 +160,10 @@ LU.classes = [
     "title": "Operations Management",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA307_Kruz_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Kruz"
   },
   {
@@ -141,8 +171,11 @@ LU.classes = [
     "title": "Human Resources Management",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA308_Bogue_Sp15.pdf",
     "units": 3,
-    "days": "T & Th",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Bogue"
   },
   {
@@ -150,8 +183,10 @@ LU.classes = [
     "title": "Ethics of Business Management",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA309_Samson_Sp15.pdf",
     "units": 3,
-    "days": "M",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Mon"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Samson"
   },
   {
@@ -159,8 +194,10 @@ LU.classes = [
     "title": "International Finance",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA314_Sevall_Sp15.pdf",
     "units": 3,
-    "days": "T",
-    "time": "6:30 pm – 9:15 pm",
+    "days": [
+      "Tue"
+    ],
+    "time": "06:30 pm – 09:15 pm",
     "professor": "Prof. Sevall"
   },
   {
@@ -168,8 +205,10 @@ LU.classes = [
     "title": "International Business and Investment Strategy",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA315_Sanford_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Sanford"
   },
   {
@@ -177,8 +216,10 @@ LU.classes = [
     "title": "International Management",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA316_Kruz_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "6:30 pm – 9:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "06:30 pm – 09:15 pm",
     "professor": "Dr. Kruz"
   },
   {
@@ -186,8 +227,10 @@ LU.classes = [
     "title": "Political and Legal Aspects of International Business",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA317_Samson_Sp15.pdf",
     "units": 3,
-    "days": "M",
-    "time": "6:30 pm – 9:15 pm",
+    "days": [
+      "Mon"
+    ],
+    "time": "06:30 pm – 09:15 pm",
     "professor": "Dr. Samson"
   },
   {
@@ -195,8 +238,11 @@ LU.classes = [
     "title": "Organization Behavior and Administration",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA320_Bogue_Sp15.pdf",
     "units": 3,
-    "days": "T & Th",
-    "time": "6:30 pm – 9:15 pm",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "time": "06:30 pm – 09:15 pm",
     "professor": "Dr. Bogue"
   },
   {
@@ -204,8 +250,10 @@ LU.classes = [
     "title": "Organization Behavior and Administration",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA320_Guerra_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Guerra"
   },
   {
@@ -213,8 +261,10 @@ LU.classes = [
     "title": "Organizational Development",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA323_Kruz_Sp15.pdf",
     "units": 3,
-    "days": "Sat",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Sat"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Kruz"
   },
   {
@@ -222,8 +272,10 @@ LU.classes = [
     "title": "Entrepreneurship",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA330_Germann_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Germann"
   },
   {
@@ -231,8 +283,10 @@ LU.classes = [
     "title": "Social Environment of Business",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA331_Anokhin_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Anokhin"
   },
   {
@@ -240,8 +294,10 @@ LU.classes = [
     "title": "Human Factors in Small Businesses",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA336_Ashurov_Sp15.pdf",
     "units": 3,
-    "days": "T",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Tue"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Ashurov"
   },
   {
@@ -249,8 +305,10 @@ LU.classes = [
     "title": "Personnel Law",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA337_Rachlin_Sp15.pdf",
     "units": 3,
-    "days": "T",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Tue"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Rachlin"
   },
   {
@@ -258,8 +316,10 @@ LU.classes = [
     "title": "Managerial Accounting and Financial Control",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA340_Loh_Sp15.pdf",
     "units": 3,
-    "days": "Th",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Thu"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Prof. Loh"
   },
   {
@@ -267,8 +327,10 @@ LU.classes = [
     "title": "Managerial Accounting and Financial Control",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA340_Sevall_Sp15.pdf",
     "units": 3,
-    "days": "Th",
-    "time": "6:30 pm – 9:15 pm",
+    "days": [
+      "Thu"
+    ],
+    "time": "06:30 pm – 09:15 pm",
     "professor": "Prof. Sevall"
   },
   {
@@ -276,8 +338,10 @@ LU.classes = [
     "title": "International Banking",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA343_Loh_Sp15.pdf",
     "units": 3,
-    "days": "Th",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Thu"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Prof. Loh"
   },
   {
@@ -285,8 +349,10 @@ LU.classes = [
     "title": "International Securities and Foreign Exchange",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA344_Sevall_Sp15.pdf",
     "units": 3,
-    "days": "T",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Tue"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Prof. Sevall"
   },
   {
@@ -294,8 +360,10 @@ LU.classes = [
     "title": "Commercial Banking and Lending",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA345_Sanford_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Sanford"
   },
   {
@@ -303,8 +371,10 @@ LU.classes = [
     "title": "Management Information Systems",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA350_Aityan_Sp15.pdf",
     "units": 3,
-    "days": "M",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Mon"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Aityan"
   },
   {
@@ -312,8 +382,10 @@ LU.classes = [
     "title": "Information Systems Database Management",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA353_Ruiz_Sp15.pdf",
     "units": 3,
-    "days": "Th",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Thu"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Prof. Ruiz"
   },
   {
@@ -321,8 +393,10 @@ LU.classes = [
     "title": "E-Commerce",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA354_Aityan_Sp15.pdf",
     "units": 3,
-    "days": "Th",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Thu"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Aityan"
   },
   {
@@ -330,8 +404,10 @@ LU.classes = [
     "title": "Quantitative Methods for Business and Finance Management",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA360_Hibshoosh_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Hibshoosh"
   },
   {
@@ -339,8 +415,10 @@ LU.classes = [
     "title": "Investments (Real Estate)",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA364_Loh_Sp15.pdf",
     "units": 3,
-    "days": "T",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Tue"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Prof. Loh"
   },
   {
@@ -348,8 +426,10 @@ LU.classes = [
     "title": "Investments (The Stock Market)",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA365_Aityan_Sp15.pdf",
     "units": 3,
-    "days": "Th",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Thu"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Aityan"
   },
   {
@@ -357,8 +437,10 @@ LU.classes = [
     "title": "Econometrics",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA366_Hibshoosh_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Hibshoosh"
   },
   {
@@ -366,8 +448,10 @@ LU.classes = [
     "title": "Communications in Leadership and Negotiations",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA370_SYSR_Sp15.pdf",
     "units": 3,
-    "days": "Th",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Thu"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Dr. Schoemaker Rippel"
   },
   {
@@ -375,8 +459,10 @@ LU.classes = [
     "title": "Business Strategy and Decision-Making",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA380_Burak_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Burak"
   },
   {
@@ -384,8 +470,10 @@ LU.classes = [
     "title": "Business Strategy and Decision-Making",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA380_Anokhin_Sp15.pdf",
     "units": 3,
-    "days": "F",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Fri"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Anokhin"
   },
   {
@@ -393,8 +481,10 @@ LU.classes = [
     "title": "International Finance",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA414_Sevall_Sp15.pdf",
     "units": 4,
-    "days": "T",
-    "time": "6:30 pm – 9:15 pm",
+    "days": [
+      "Tue"
+    ],
+    "time": "06:30 pm – 09:15 pm",
     "professor": "Prof. Sevall"
   },
   {
@@ -402,8 +492,10 @@ LU.classes = [
     "title": "International Management",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA416_Kruz_Sp15.pdf",
     "units": 4,
-    "days": "W",
-    "time": "6:30 pm – 9:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "06:30 pm – 09:15 pm",
     "professor": "Dr. Kruz"
   },
   {
@@ -411,8 +503,10 @@ LU.classes = [
     "title": "Political and Legal Aspects of International Business",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA417_Samson_Sp15.pdf",
     "units": 4,
-    "days": "M",
-    "time": "6:30 pm – 9:15 pm",
+    "days": [
+      "Mon"
+    ],
+    "time": "06:30 pm – 09:15 pm",
     "professor": "Dr. Samson"
   },
   {
@@ -420,8 +514,10 @@ LU.classes = [
     "title": "Organizational Development",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA423_Kruz_Sp15.pdf",
     "units": 4,
-    "days": "Sat",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Sat"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Kruz"
   },
   {
@@ -429,8 +525,10 @@ LU.classes = [
     "title": "Social Environment of Business",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA431_Anokhin_Sp15.pdf",
     "units": 4,
-    "days": "W",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Anokhin"
   },
   {
@@ -438,8 +536,10 @@ LU.classes = [
     "title": "Personnel Law",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA437_Rachlin_Sp15.pdf",
     "units": 4,
-    "days": "T",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Tue"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Rachlin"
   },
   {
@@ -447,8 +547,10 @@ LU.classes = [
     "title": "International Banking",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA443_Loh_Sp15.pdf",
     "units": 4,
-    "days": "Th",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Thu"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Prof. Loh"
   },
   {
@@ -456,8 +558,10 @@ LU.classes = [
     "title": "International Securities and Foreign Exchange",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA444_Sevall_Sp15.pdf",
     "units": 4,
-    "days": "T",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Tue"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Prof. Sevall"
   },
   {
@@ -465,8 +569,10 @@ LU.classes = [
     "title": "Commercial Banking and Lending",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA445_Sanford_Sp15.pdf",
     "units": 4,
-    "days": "W",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Sanford"
   },
   {
@@ -474,8 +580,10 @@ LU.classes = [
     "title": "Quantitative Methods for Business and Finance",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA460_Hibshoosh_Sp15.pdf",
     "units": 4,
-    "days": "W",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Hibshoosh"
   },
   {
@@ -483,8 +591,10 @@ LU.classes = [
     "title": "Investments (Real Estate)",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA464_Loh_Sp15.pdf",
     "units": 4,
-    "days": "T",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Tue"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Prof. Loh"
   },
   {
@@ -492,8 +602,10 @@ LU.classes = [
     "title": "Investments (The Stock Market)",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA465_Aityan_Sp15.pdf",
     "units": 4,
-    "days": "Th",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Thu"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Aityan"
   },
   {
@@ -501,8 +613,10 @@ LU.classes = [
     "title": "Econometrics",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA466_Hibshoosh_Sp15.pdf",
     "units": 4,
-    "days": "W",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Hibshoosh"
   },
   {
@@ -510,8 +624,10 @@ LU.classes = [
     "title": "Business Strategy and Decision-Making for International Business",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA481_Anokhin_Sp15.pdf",
     "units": 4,
-    "days": "F",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Fri"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Anokhin"
   },
   {
@@ -519,8 +635,10 @@ LU.classes = [
     "title": "Business Strategy and Decision-Making for Finance Management",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA482_Burak_Sp15.pdf",
     "units": 4,
-    "days": "W",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Burak"
   },
   {
@@ -528,8 +646,10 @@ LU.classes = [
     "title": "Doctoral Research Seminar in Finance and Investments",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA501_Burak%20Sp15.pdf",
     "units": 3,
-    "days": "F",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Fri"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Burak"
   },
   {
@@ -537,8 +657,10 @@ LU.classes = [
     "title": "Doctoral Research Seminar in Human Resources Management",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA502_Burak%20Sp15.pdf",
     "units": 3,
-    "days": "F",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Fri"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Burak"
   },
   {
@@ -546,8 +668,10 @@ LU.classes = [
     "title": "DBA Dissertation Seminar",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA510_Burak_Sp15.pdf",
     "units": 3,
-    "days": "F",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Fri"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Burak"
   },
   {
@@ -555,8 +679,10 @@ LU.classes = [
     "title": "Introduction to Business",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA10_Germann_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Wed"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Dr. Germann"
   },
   {
@@ -564,8 +690,10 @@ LU.classes = [
     "title": "Introduction to Business",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA10_Ashurov_Sp15.pdf",
     "units": 3,
-    "days": "Th",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Thu"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Ashurov"
   },
   {
@@ -573,8 +701,10 @@ LU.classes = [
     "title": "Financial Accounting",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA42_Tailab_Sp15.pdf",
     "units": 4,
-    "days": "Th",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Thu"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Mr. Tailab"
   },
   {
@@ -582,8 +712,10 @@ LU.classes = [
     "title": "Statistics",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA45_Himelfarb_Sp15.pdf",
     "units": 3,
-    "days": "M",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Mon"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Himelfarb"
   },
   {
@@ -591,8 +723,10 @@ LU.classes = [
     "title": "Business Ethics",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA109_Samson_Sp15.pdf",
     "units": 3,
-    "days": "M",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Mon"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Samson"
   },
   {
@@ -600,8 +734,10 @@ LU.classes = [
     "title": "Management Principles",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA110_Kruz_Sp15.pdf",
     "units": 3,
-    "days": "Sat",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Sat"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Dr. Kruz"
   },
   {
@@ -609,8 +745,10 @@ LU.classes = [
     "title": "Small Business Management",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA115_Ashurov_Sp15.pdf",
     "units": 3,
-    "days": "T",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Tue"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Ashurov"
   },
   {
@@ -618,8 +756,10 @@ LU.classes = [
     "title": "Introduction to International Business",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA130_Sanford_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Sanford"
   },
   {
@@ -627,8 +767,10 @@ LU.classes = [
     "title": "Legal Foundations of Business",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA135_Rachlin_Sp15.pdf",
     "units": 3,
-    "days": "T",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Tue"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Rachlin"
   },
   {
@@ -636,8 +778,10 @@ LU.classes = [
     "title": "Fundamentals of Finance",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA140_Loh_Sp15.pdf",
     "units": 3,
-    "days": "T",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Tue"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Prof. Loh"
   },
   {
@@ -645,8 +789,10 @@ LU.classes = [
     "title": "Fundamentals of Finance",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA140_Xu_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Xu"
   },
   {
@@ -654,8 +800,10 @@ LU.classes = [
     "title": "Applications Software",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA146_Ruiz_Sp15.pdf",
     "units": 3,
-    "days": "M",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Mon"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Prof. Ruiz"
   },
   {
@@ -663,8 +811,10 @@ LU.classes = [
     "title": "Marketing",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA150_Hess_Sp15.pdf",
     "units": 3,
-    "days": "M",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Mon"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Hess"
   },
   {
@@ -672,8 +822,10 @@ LU.classes = [
     "title": "Marketing",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA150_Hibshoosh_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "6:30 pm – 9:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "06:30 pm – 09:15 pm",
     "professor": "Dr. Hibshoosh"
   },
   {
@@ -681,8 +833,10 @@ LU.classes = [
     "title": "Production Management",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA215_Ashurov_Sp15.pdf",
     "units": 3,
-    "days": "T",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Tue"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Ashurov"
   },
   {
@@ -690,8 +844,10 @@ LU.classes = [
     "title": "Production Management",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA215_Kruz_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Kruz"
   },
   {
@@ -699,8 +855,11 @@ LU.classes = [
     "title": "Personnel Management",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA217_Bogue_Sp15.pdf",
     "units": 3,
-    "days": "T & Th",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Bogue"
   },
   {
@@ -708,8 +867,10 @@ LU.classes = [
     "title": "Organizational Development",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA223_Kruz_Sp15.pdf",
     "units": 3,
-    "days": "Sat",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Sat"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Kruz"
   },
   {
@@ -717,8 +878,10 @@ LU.classes = [
     "title": "Managerial Accounting",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA240_Loh_Sp15.pdf",
     "units": 4,
-    "days": "Th",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Thu"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Prof. Loh"
   },
   {
@@ -726,8 +889,10 @@ LU.classes = [
     "title": "Managerial Accounting",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA240_Sevall_Sp15.pdf",
     "units": 4,
-    "days": "Th",
-    "time": "6:30 pm – 9:15 pm",
+    "days": [
+      "Thu"
+    ],
+    "time": "06:30 pm – 09:15 pm",
     "professor": "Prof. Sevall"
   },
   {
@@ -735,8 +900,10 @@ LU.classes = [
     "title": "Quantitative Analysis",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA241_Hibshoosh_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Hibshoosh"
   },
   {
@@ -744,8 +911,10 @@ LU.classes = [
     "title": "Business and Society",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA251_Anokhin_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Anokhin"
   },
   {
@@ -753,8 +922,10 @@ LU.classes = [
     "title": "Entrepreneurial Management",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA255_Germann_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Germann"
   },
   {
@@ -762,8 +933,10 @@ LU.classes = [
     "title": "Information Systems Concept",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA260_Aityan_Sp15.pdf",
     "units": 3,
-    "days": "M",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Mon"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Aityan"
   },
   {
@@ -771,8 +944,11 @@ LU.classes = [
     "title": "Industrial and Organizational Behavior",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA275_Bogue_Sp15.pdf",
     "units": 3,
-    "days": "T & Th",
-    "time": "6:30 pm – 9:15 pm",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "time": "06:30 pm – 09:15 pm",
     "professor": "Dr. Bogue"
   },
   {
@@ -780,8 +956,10 @@ LU.classes = [
     "title": "Industrial and Organizational Behavior",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA275_Guerra_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Guerra"
   },
   {
@@ -789,8 +967,10 @@ LU.classes = [
     "title": "Business Policies",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA290_Guerra_Sp15.pdf",
     "units": 3,
-    "days": "T",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Tue"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Dr. Guerra"
   },
   {
@@ -798,8 +978,10 @@ LU.classes = [
     "title": "Special Topics in Business:",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA298_Anokhin_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Wed"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Dr. Anokhin"
   },
   {
@@ -807,8 +989,10 @@ LU.classes = [
     "title": "Special Topics in Business:",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/BA298_Ruiz_Sp15.pdf",
     "units": 3,
-    "days": "Th",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Thu"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Prof. Ruiz"
   },
   {
@@ -816,8 +1000,10 @@ LU.classes = [
     "title": "Introduction to Computer Science",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/CS10_Ruiz_Sp15.pdf",
     "units": 3,
-    "days": "Th",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Thu"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Prof. Ruiz"
   },
   {
@@ -825,8 +1011,10 @@ LU.classes = [
     "title": "Economic Geography",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/ECON10_Anokhin_Sp15.pdf",
     "units": 3,
-    "days": "F",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Fri"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Dr. Anokhin"
   },
   {
@@ -834,8 +1022,10 @@ LU.classes = [
     "title": "Principles of Economics II (Microeconomics)",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/ECON20B_Aityan_Sp15.pdf",
     "units": 3,
-    "days": "M",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Mon"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Aityan"
   },
   {
@@ -843,8 +1033,10 @@ LU.classes = [
     "title": "Principles of Economics II (Microeconomics)",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/ECON20B_Ashurov_Sp15.pdf",
     "units": 3,
-    "days": "Th",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Thu"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Ashurov"
   },
   {
@@ -852,8 +1044,10 @@ LU.classes = [
     "title": "Critical Thinking",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/ENG75_SYSR_Sp15.pdf",
     "units": 3,
-    "days": "T",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Tue"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Dr. Schoemaker Rippel"
   },
   {
@@ -861,8 +1055,10 @@ LU.classes = [
     "title": "Written Communication I",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/ENG82A_SYSR_Sp15.pdf",
     "units": 3,
-    "days": "T",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Tue"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Schoemaker Rippel"
   },
   {
@@ -870,8 +1066,10 @@ LU.classes = [
     "title": "Business Communication",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/ENG93_SYSR_Sp15.pdf",
     "units": 3,
-    "days": "Th",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Thu"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Dr. Schoemaker Rippel"
   },
   {
@@ -879,8 +1077,10 @@ LU.classes = [
     "title": "Introduction to Philosophy",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/HUM30_Tolossa_Sp15.pdf",
     "units": 3,
-    "days": "F",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Fri"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Tolossa"
   },
   {
@@ -888,8 +1088,10 @@ LU.classes = [
     "title": "Finite Mathematics",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/MATH15_Ruiz_Sp15.pdf",
     "units": 3,
-    "days": "M",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Mon"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Prof. Ruiz"
   },
   {
@@ -897,8 +1099,10 @@ LU.classes = [
     "title": "Fundamentals of Psychology",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/PSYCH10_Stamatakis_Sp15.pdf",
     "units": 3,
-    "days": "M",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Mon"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Prof. Stamatakis"
   },
   {
@@ -906,8 +1110,10 @@ LU.classes = [
     "title": "Human Biology",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/SCI31_Mania_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Wed"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Dr. Mania"
   },
   {
@@ -915,8 +1121,10 @@ LU.classes = [
     "title": "Physical Principles of Ultrasound",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI10_Nguyen_Sp15.pdf",
     "units": 3,
-    "days": "Th",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Thu"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Dr. Nguyen"
   },
   {
@@ -924,8 +1132,10 @@ LU.classes = [
     "title": "Medical Terminology",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI20_Mania_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Mania"
   },
   {
@@ -933,8 +1143,10 @@ LU.classes = [
     "title": "Anatomy and Physiology",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI30_Mania_Sp15.pdf",
     "units": 3,
-    "days": "T",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Tue"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Mania"
   },
   {
@@ -942,8 +1154,10 @@ LU.classes = [
     "title": "Ultrasound Principles and Protocols",
     "syllabus": "http://@file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI110_Mania_Sp15.pdf",
     "units": 4,
-    "days": "T",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Tue"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Mania"
   },
   {
@@ -951,8 +1165,10 @@ LU.classes = [
     "title": "Vascular Anatomy and Hemodynamics",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI114_Kay_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Ms. Kay"
   },
   {
@@ -960,8 +1176,10 @@ LU.classes = [
     "title": "ECG and Arrhythmias Interpretation",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI115_Nguyen_Sp15.pdf",
     "units": 4,
-    "days": "W",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Nguyen"
   },
   {
@@ -969,8 +1187,10 @@ LU.classes = [
     "title": "OB/GYN Ultrasound I",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI120_Ristic_Sp15.pdf",
     "units": 4,
-    "days": "F",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Fri"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Ristic"
   },
   {
@@ -978,8 +1198,10 @@ LU.classes = [
     "title": "Peripheral Vascular",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI124_Mania_Sp15.pdf",
     "units": 4,
-    "days": "T",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Tue"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Dr. Mania"
   },
   {
@@ -987,8 +1209,10 @@ LU.classes = [
     "title": "Introduction to Echocardiography",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI125_Ostanina_Sp15.pdf",
     "units": 4,
-    "days": "W",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Wed"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Dr. Ostanina"
   },
   {
@@ -996,8 +1220,10 @@ LU.classes = [
     "title": "OB/GYN Ultrasound II",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI130_Ristic_Sp15.pdf",
     "units": 3,
-    "days": "M",
-    "time": "12:30 pm – 3:15 pm",
+    "days": [
+      "Mon"
+    ],
+    "time": "12:30 pm – 03:15 pm",
     "professor": "Dr. Ristic"
   },
   {
@@ -1005,8 +1231,11 @@ LU.classes = [
     "title": "OB/GYN Scanning (Lab)",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI140_Yee_Sp15.pdf",
     "units": 4,
-    "days": "M & W",
-    "time": "1:10 pm – 4:45 pm",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "time": "01:10 pm – 04:45 pm",
     "professor": "Dr. Zakasovskaya"
   },
   {
@@ -1014,8 +1243,10 @@ LU.classes = [
     "title": "Abdomen and Small Parts I",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI150_Sadatian_Sp15.pdf",
     "units": 4,
-    "days": "F",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Fri"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Dr. Sadatian"
   },
   {
@@ -1023,8 +1254,10 @@ LU.classes = [
     "title": "Abdomen and Small Parts II",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI160_Sadatian_Sp15.pdf",
     "units": 3,
-    "days": "M",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Mon"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Dr. Sadatian"
   },
   {
@@ -1032,8 +1265,11 @@ LU.classes = [
     "title": "Abdomen and Small Parts Scanning (Lab)",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI170_Yee_Sp15.pdf",
     "units": 4,
-    "days": "M & W",
-    "time": "9:00 am – 12:35 pm",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "time": "09:00 am – 12:35 pm",
     "professor": "Dr. Zakasovskaya"
   },
   {
@@ -1041,8 +1277,10 @@ LU.classes = [
     "title": "Advanced Ultrasound Physics and Technology",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI210_Nguyen_Sp15.pdf",
     "units": 3,
-    "days": "W",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Nguyen"
   },
   {
@@ -1050,8 +1288,10 @@ LU.classes = [
     "title": "Advanced OB/GYN Ultrasound",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI231_Zakasovskaya_Sp15.pdf",
     "units": 4,
-    "days": "T",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Tue"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Zakasovskaya"
   },
   {
@@ -1059,8 +1299,10 @@ LU.classes = [
     "title": "Abdominal Vascular",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI234_Zakasovskaya_Sp15.pdf",
     "units": 4,
-    "days": "T",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Tue"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Dr. Zakasovskaya"
   },
   {
@@ -1068,8 +1310,10 @@ LU.classes = [
     "title": "Echo Imaging",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI235_Ostanina_Sp15.pdf",
     "units": 4,
-    "days": "T",
-    "time": "6:30 pm – 9:15 pm",
+    "days": [
+      "Tue"
+    ],
+    "time": "06:30 pm – 09:15 pm",
     "professor": "Dr. Ostanina"
   },
   {
@@ -1077,8 +1321,11 @@ LU.classes = [
     "title": "Vascular Scanning (Lab)",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI244_Sadatian_Sp15.pdf",
     "units": 4,
-    "days": "T & Th",
-    "time": "9:00 am – 12:35 pm",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "time": "09:00 am – 12:35 pm",
     "professor": "Dr. Sadatian"
   },
   {
@@ -1086,8 +1333,11 @@ LU.classes = [
     "title": "Echo Scanning (Lab)",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI245_Sadatian_Sp15.pdf",
     "units": 4,
-    "days": "Th & F",
-    "time": "1:10 pm – 4:45 pm",
+    "days": [
+      "Thu",
+      "Fri"
+    ],
+    "time": "01:10 pm – 04:45 pm",
     "professor": "Dr. Sadatian"
   },
   {
@@ -1095,8 +1345,10 @@ LU.classes = [
     "title": "Advanced Abdomen and Small Parts",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI251_Ristic_Sp15.pdf",
     "units": 4,
-    "days": "M",
-    "time": "9:00 am – 11:45 am",
+    "days": [
+      "Mon"
+    ],
+    "time": "09:00 am – 11:45 am",
     "professor": "Dr. Ristic"
   },
   {
@@ -1104,8 +1356,10 @@ LU.classes = [
     "title": "Transcranial Doppler",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI254_Ristic_Sp15.pdf",
     "units": 4,
-    "days": "M",
-    "time": "3:30 pm – 6:15 pm",
+    "days": [
+      "Mon"
+    ],
+    "time": "03:30 pm – 06:15 pm",
     "professor": "Dr. Ristic"
   },
   {
@@ -1113,8 +1367,10 @@ LU.classes = [
     "title": "Advanced Echo Imaging",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/DI255_Ostanina_Sp15.pdf",
     "units": 4,
-    "days": "Th",
-    "time": "6:30 pm – 9:15 pm",
+    "days": [
+      "Thu"
+    ],
+    "time": "06:30 pm – 09:15 pm",
     "professor": "Dr. Ostanina"
   },
   {
@@ -1122,8 +1378,10 @@ LU.classes = [
     "title": "Writing",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/IAEP1_Sp15.pdf",
     "units": null,
-    "days": "W",
-    "time": "9:00 am – 12:35 pm",
+    "days": [
+      "Wed"
+    ],
+    "time": "09:00 am – 12:35 pm",
     "professor": "Prof. Hyman"
   },
   {
@@ -1131,8 +1389,10 @@ LU.classes = [
     "title": "Conversation / Speech",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/IAEP2_Sp15.pdf",
     "units": null,
-    "days": "F",
-    "time": "9:00 am – 12:35 pm",
+    "days": [
+      "Fri"
+    ],
+    "time": "09:00 am – 12:35 pm",
     "professor": "Prof. Hyman"
   },
   {
@@ -1140,8 +1400,10 @@ LU.classes = [
     "title": "Reading Comprehension",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/IAEP3_Sp15.pdf",
     "units": null,
-    "days": "T",
-    "time": "3:30 pm – 5:10 pm",
+    "days": [
+      "Tue"
+    ],
+    "time": "03:30 pm – 05:10 pm",
     "professor": "Dr. Schoemaker Rippel"
   },
   {
@@ -1149,8 +1411,10 @@ LU.classes = [
     "title": "Grammar",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/IAEP4_Sp15.pdf",
     "units": null,
-    "days": "F",
-    "time": "1:15 pm – 4:50 pm",
+    "days": [
+      "Fri"
+    ],
+    "time": "01:15 pm – 04:50 pm",
     "professor": "Prof. Hyman"
   },
   {
@@ -1158,8 +1422,10 @@ LU.classes = [
     "title": "Vocabulary",
     "syllabus": "http://file.lincolnuca.edu/2015/Spring%202015/Syllabi/IAEP5_Sp15.pdf",
     "units": null,
-    "days": "Th",
-    "time": "12:30 pm – 4:05 pm",
+    "days": [
+      "Thu"
+    ],
+    "time": "12:30 pm – 04:05 pm",
     "professor": "Dr. Schoemaker Rippel"
   }
 ];
