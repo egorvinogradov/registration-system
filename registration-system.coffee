@@ -1,5 +1,8 @@
 @LU = @LU or {}
 
+@LU.settings =
+  MOBILE_DEVICE_WIDTH: 400
+
 class LU.App
   
   classes:
@@ -33,9 +36,15 @@ class LU.App
     duplicate = _.find classes, (item) =>
       item.abbr is data.abbr
 
+    Session.set "last-added-class", data.abbr + " " + data.title
+
     if duplicate
-      $(".class-alert").removeClass("hidden")
+      Session.set "alert-visible", true
+      setTimeout =>
+        Session.set "alert-visible", false
+      , 5000
     else
+      Session.set "alert-visible", false
       classes.push data
 
     Meteor.users.update { _id: Meteor.user()._id }, $set: "profile.classes": classes
@@ -77,6 +86,8 @@ class LU.App
 
     template = """
         <div class="row">
+          <div class="b-autocomplete__name"></div>
+          <div class="b-autocomplete__details"></div>
           <div class="col-sm-2 b-autocomplete__abbr">#{abbr}</div>
           <div class="col-sm-5 b-autocomplete__title">#{data.title}</div>
           <div class="col-sm-2 b-autocomplete__professor">#{data.professor}</div>
@@ -100,16 +111,27 @@ if Meteor.isClient
     loggedIn: ->
       Meteor.user()
     mobile: ->
-      $(window).width() < 400 # default mobile device width
+      $(window).width() < LU.settings.MOBILE_DEVICE_WIDTH
 
   Template.heading.rendered = ->
     LU.app.initializeAutocomplete()
+    Session.set "alert-visible", false
+
+  Template.alert.helpers
+    name: ->
+      Session.get "last-added-class"
+    visible: ->
+      Session.get "alert-visible"
+
+  Template.alert.events
+    "click .b-alert__close": ->
+      Session.set "alert-visible", false
 
   Template.list.helpers
     classes: LU.app.getClasses
 
   Template.list.events
-    "click .drop-class": ->
+    "click .b-drop": ->
       LU.app.dropClass @
 
 

@@ -14,9 +14,9 @@
 
 
 <template name="navbar">
+
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
-
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
@@ -28,7 +28,6 @@
           Lincoln University
         </a>
       </div>
-
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li class="active">
@@ -41,9 +40,24 @@
           {{> loginButtons}}
         </ul>
       </div>
-
     </div>
   </nav>
+
+</template>
+
+
+
+<template name="alert">
+
+  <div class="b-alert alert alert-danger {{#if visible}}m-expanded{{/if}}" role="alert">
+    <div class="container">
+      {{name}} is already added
+      <button class="b-alert__close close" type="button" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+
 </template>
 
 
@@ -51,8 +65,8 @@
 <template name="heading">
 
   <div class="b-heading jumbotron {{#if loggedIn}}m-loggedin{{/if}}">
+    {{> alert}}
     <div class="b-heading__container container">
-
       <div class="b-heading__intro">
         <h1 class="b-heading__intro-title">Manage your classes</h1>
         <p>
@@ -60,7 +74,6 @@
           change your classes at Lincoln University
         </p>
       </div>
-
       <div class="b-heading__search form-inline">
         <p>
           <b>
@@ -75,87 +88,63 @@
           </button>
         </div>
       </div>
-
     </div>
   </div>
+
 </template>
 
 
 
 <template name="list">
-  <div class="list-group">
-    {{#each classes}}
-      <span class="list-group-item">
-        <div class="container-fluid">
-          <div class="col-md-8">
-            <h4 class="list-group-item-heading">
-              {{this.abbr}}
-            </h4>
-            <p class="list-group-item-text">
-              {{this.title}}
-            </p>
-            <p class="list-group-item-text">
-              {{this.professor}}
-            </p>
-            <p class="list-group-item-text">
-              {{this.days}} {{time}}
-            </p>
-            <p class="list-group-item-text">
-              <a href="{{this.syllabus}}" target="_blank">Open syllabus</a>
-            </p>
-          </div>
-          <div class="col-md-4">
-            <button class="drop-class btn btn-default btn-sm">
-              <i class="glyphicon glyphicon-remove"></i>
-              Drop class
-            </button>
-          </div>
-        </div>
-      </span>
-    {{/each}}
-  </div>
-</template>
-
-
-
-
-
-
-
-
-
-
-<template name="form">
-  <div class="class-alert alert alert-danger alert-dismissible hidden" role="alert">
-    This class is already added
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="form-group">
-    <label for="class-input">Class Name</label>
-    <input type="text" class="form-control" id="class-input" placeholder="BA 350">
-  </div>
-</template>
-
-
-
-<template name="form2">
 
   <div class="container">
-    <div class="col-md-5">
-      <h3>Add a New Class</h3>
-      <div class="panel panel-default">
-        <div class="panel-body">
-          {{> form}}
-        </div>
+    {{#if classes.length}}
+      <div class="list-group">
+        {{#each classes}}
+          <span class="list-group-item">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-5">
+                  <h4 class="list-group-item-heading">
+                    {{this.abbr}}
+                  </h4>
+                  <p class="list-group-item-text">
+                    {{this.title}}
+                  </p>
+                </div>
+                <div class="col-md-3">
+                  <h4 class="list-group-item-heading">
+                    {{this.professor}}
+                  </h4>
+                  <p class="list-group-item-text small text-muted">
+                    {{#each this.days}} {{this}}{{/each}},
+                    {{time}}
+                  </p>
+                </div>
+                <div class="col-md-4 text-right">
+                  <a class="b-list__button btn btn-primary" href="{{this.syllabus}}" target="_blank">
+                    <i class="glyphicon glyphicon-file"></i>
+                    Open Syllabus
+                  </a>
+                  &nbsp;
+                  <button class="b-list__button b-drop btn btn-danger">
+                    <i class="glyphicon glyphicon-ban-circle"></i>
+                    Drop Class
+                  </button>
+                </div>
+              </div>
+            </div>
+          </span>
+        {{/each}}
       </div>
-    </div>
-    <div class="col-md-5">
-      <h3>Your Classes</h3>
-
-    </div>
-
+    {{else}}
+      <div class="b-list__empty text-muted">
+        <h1>No classes added yet</h1>
+        <p class="lead">
+          Type professor's name, class title or abbreviation in the search field above to add a new class.
+        </p>
+      </div>
+    {{/if}}
   </div>
 
 </template>
