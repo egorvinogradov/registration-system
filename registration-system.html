@@ -9,7 +9,6 @@
   <div class="b-container">
     {{> navbar}}
     {{> heading}}
-    {{> list}}
   </div>
 
   {{> footer}}
@@ -95,6 +94,12 @@
     </div>
   </div>
 
+  {{#if loggedIn}}
+    {{> list}}
+  {{else}}
+    {{> features}}
+  {{/if}}
+
 </template>
 
 
@@ -155,6 +160,53 @@
 
 
 
+<template name="features">
+
+  <div class="b-features container">
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <i class="b-features__icon glyphicon glyphicon-thumbs-up text-danger"></i>
+        <h2>Convenient</h2>
+        <p class="lead">
+          Add, drop and change your classes right from your computer
+        </p>
+      </div>
+      <div class="col-md-4 text-center">
+        <i class="b-features__icon glyphicon glyphicon-phone text-danger"></i>
+        <h2>Mobile-Friendly</h2>
+        <p class="lead">
+          Fully functional on any device including smartphones and tablets
+        </p>
+      </div>
+      <div class="col-md-4 text-center">
+        <i class="b-features__icon glyphicon glyphicon-lock text-danger"></i>
+        <h2>Secure</h2>
+        <p class="lead">
+          Available for lincolnucasf.edu email owners only
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+<div class="hidden">
+
+
+Convenient
+Add, drop and change right from your computer
+
+Mobile-Friendly
+Fully functional on any device including smartphones and tablets
+
+Secure
+Available for lincolnucasf.edu email owners only
+
+</div>
+
+</template>
+
+
+
 <template name="footer">
 
   <footer class="b-footer navbar-default">
@@ -173,5 +225,5 @@
       </p>
     </div>
   </footer>
-  
+
 </template>

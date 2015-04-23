@@ -86,8 +86,6 @@ class LU.App
 
     template = """
         <div class="row">
-          <div class="b-autocomplete__name"></div>
-          <div class="b-autocomplete__details"></div>
           <div class="col-sm-2 b-autocomplete__abbr">#{abbr}</div>
           <div class="col-sm-5 b-autocomplete__title">#{data.title}</div>
           <div class="col-sm-2 b-autocomplete__professor">#{data.professor}</div>
