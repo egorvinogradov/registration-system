@@ -107,7 +107,7 @@ if Meteor.isClient
 
   Template.heading.helpers
     loggedIn: ->
-      Meteor.user()
+      Meteor.user() #or true # TODO: remove
     mobile: ->
       $(window).width() < LU.settings.MOBILE_DEVICE_WIDTH
 
@@ -142,11 +142,12 @@ if Meteor.isServer
 
   Meteor.startup ->
 
-    Accounts.validateLoginAttempt (login) ->
-      email = login.user.services.google.email
+    Accounts.validateNewUser (user) ->
+      true
+      email = user.services.google.email
       if email.split("@")[1] == "lincolnucasf.edu"
-        console.log("Successfull login:", email)
+        console.log("Successful login:", email)
         true
       else
-        console.log("Failed login:", email)
-        false
+        console.log("Login failed:", email)
+        throw new Meteor.Error 403, "You must login using your @lincolnucasf.edu email"

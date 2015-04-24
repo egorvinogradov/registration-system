@@ -1,12 +1,41 @@
 @import "mixins"
 
 $width-mobile: 400px
+$height-navbar: 50px
+
+
+// Rewriting default styles
 
 html, body
   height: 100%
 
 .container
   max-width: 960px !important
+
+.btn-Google
+  &:hover,
+  &:focus
+    color: #ffffff
+
+#login-buttons-message-dialog
+  top: $height-navbar
+  position: absolute
+  left: 0
+  right: 0
+
+  .alert
+    padding: 10px 20px
+    border-radius: 0
+
+#messages-dialog-dismiss-button
+  position: absolute
+  top: 11px
+  right: 20px
+  color: #337ab7
+  cursor: pointer
+
+
+// Common
 
 .b-app
   overflow-y: scroll
@@ -61,7 +90,7 @@ html, body
 .b-heading__intro
   padding-top: 36px
 
-  .m-loggedin &
+  .m-logged-in &
     display: none
 
   .b-heading__intro-title
@@ -76,7 +105,7 @@ html, body
   margin: 0 auto
   display: none
 
-  .m-loggedin &
+  .m-logged-in &
     display: block
 
 .b-heading__search-field
@@ -122,6 +151,7 @@ html, body
 
 .b-features
   padding: 20px 0 90px 0
+  overflow: hidden
 
 .b-features__inner
   padding: 15% 10% 0 10%
