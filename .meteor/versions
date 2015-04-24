@@ -16,10 +16,10 @@ ddp@1.1.0
 deps@1.0.7
 ejson@1.0.6
 fastclick@1.0.3
+fortawesome:fontawesome@4.3.0
 fourseven:scss@2.1.1
 geojson-utils@1.0.3
 google@1.1.5
-hedcet:touch-swipe@1.6.6
 html-tools@1.0.4
 htmljs@1.0.4
 http@1.1.0

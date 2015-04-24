@@ -66,7 +66,6 @@ class LU.App
         item.abbr
         item.title
         item.professor
-
       ].join("|")
 
     autocomplete = $(@classes.searchInput).autocomplete
