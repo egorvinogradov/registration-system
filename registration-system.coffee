@@ -1,7 +1,13 @@
 @LU = @LU or {}
 
-@LU.settings =
-  MOBILE_DEVICE_WIDTH: 400
+if Meteor.isClient
+
+  @LU.settings =
+    MOBILE_DEVICE_WIDTH: 400
+
+  @LU.window = $(@)
+
+
 
 class LU.App
   
@@ -105,11 +111,14 @@ if Meteor.isClient
 
   LU.app = new (LU.App)
 
+  LU.window.on "resize", _.debounce =>
+    Session.set "mobile", LU.window.width() < LU.settings.MOBILE_DEVICE_WIDTH
+
   Template.heading.helpers
     loggedIn: ->
-      Meteor.user() #or true # TODO: remove
+      Meteor.user()
     mobile: ->
-      $(window).width() < LU.settings.MOBILE_DEVICE_WIDTH
+      Session.get "mobile"
 
   Template.heading.rendered = ->
     LU.app.initializeAutocomplete()
@@ -127,10 +136,25 @@ if Meteor.isClient
 
   Template.list.helpers
     classes: LU.app.getClasses
+    mobile: ->
+      Session.get "mobile"
 
   Template.list.events
+
     "click .b-drop": ->
       LU.app.dropClass @
+
+    "swipeleft .b-list__item": (e) ->
+      $(e.currentTarget)
+        .addClass("b-list__item_swiped")
+        .siblings()
+        .removeClass("b-list__item_swiped")
+
+    "swiperight .b-list__item": (e) ->
+      $(e.currentTarget).removeClass "b-list__item_swiped"
+
+  Template.list.rendered = ->
+    $(".b-list__item").hammer()
 
   Template._loginButtonsLoggedOutSingleLoginButton.rendered = ->
     $(".login-button.btn-Google").html("Sign in with @lincolnucasf.edu")
