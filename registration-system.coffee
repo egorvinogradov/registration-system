@@ -16,6 +16,56 @@ class LU.App
 
   MAX_AUTOCOMPLETE_RESULTS: 10
 
+  initializeMeteorTemplates: ->
+
+    Template.heading.helpers
+      loggedIn: ->
+        console.log('1---', Meteor.user())
+        Meteor.user() or true
+      mobile: ->
+        Session.get "mobile"
+
+    Template.heading.rendered = ->
+      LU.app.initializeAutocomplete()
+      Session.set "alert-visible", false
+
+    Template.alert.helpers
+      name: ->
+        Session.get "last-added-class"
+      visible: ->
+        Session.get "alert-visible"
+
+    Template.list.helpers
+      classes: LU.app.getClasses
+      mobile: ->
+        Session.get "mobile"
+
+    Template.list.rendered = ->
+      $(".b-list__item").hammer()
+
+    Template._loginButtonsLoggedOutSingleLoginButton.rendered = ->
+      $(".login-button.btn-Google").html("Sign in with @lincolnucasf.edu")
+
+  attachMeteorEvents: ->
+
+    Template.alert.events
+      "click .b-alert__close": ->
+        Session.set "alert-visible", false
+
+    Template.list.events
+
+      "click .b-drop": ->
+        LU.app.dropClass @
+
+      "swipeleft .b-list__item": (e) ->
+        $(e.currentTarget)
+          .addClass("b-list__item_swiped")
+          .siblings()
+          .removeClass("b-list__item_swiped")
+
+      "swiperight .b-list__item": (e) ->
+        $(e.currentTarget).removeClass "b-list__item_swiped"
+
   getClasses: ->
     try classes = Meteor.user().profile.classes
     if classes
@@ -104,60 +154,25 @@ class LU.App
     item.value = abbr + " " + data.title
     $(template).appendTo(autocomplete)
 
+  setMobileSession: ->
+    console.log('setMobileSession', LU.window.width() < LU.settings.MOBILE_DEVICE_WIDTH, LU.settings.MOBILE_DEVICE_WIDTH, LU.window.width())
+    #Session.set "mobile", LU.window.width() < LU.settings.MOBILE_DEVICE_WIDTH
+
 
 
 if Meteor.isClient
 
-  LU.app = new (LU.App)
+  $ ->
 
-  LU.window.on "resize", _.debounce =>
-    Session.set "mobile", LU.window.width() < LU.settings.MOBILE_DEVICE_WIDTH
+    LU.app = new (LU.App)
 
-  Template.heading.helpers
-    loggedIn: ->
-      Meteor.user()
-    mobile: ->
-      Session.get "mobile"
+    LU.app.setMobileSession()
 
-  Template.heading.rendered = ->
-    LU.app.initializeAutocomplete()
-    Session.set "alert-visible", false
+    LU.window.on "resize", _.debounce =>
+      LU.app.setMobileSession()
 
-  Template.alert.helpers
-    name: ->
-      Session.get "last-added-class"
-    visible: ->
-      Session.get "alert-visible"
-
-  Template.alert.events
-    "click .b-alert__close": ->
-      Session.set "alert-visible", false
-
-  Template.list.helpers
-    classes: LU.app.getClasses
-    mobile: ->
-      Session.get "mobile"
-
-  Template.list.events
-
-    "click .b-drop": ->
-      LU.app.dropClass @
-
-    "swipeleft .b-list__item": (e) ->
-      $(e.currentTarget)
-        .addClass("b-list__item_swiped")
-        .siblings()
-        .removeClass("b-list__item_swiped")
-
-    "swiperight .b-list__item": (e) ->
-      $(e.currentTarget).removeClass "b-list__item_swiped"
-
-  Template.list.rendered = ->
-    $(".b-list__item").hammer()
-
-  Template._loginButtonsLoggedOutSingleLoginButton.rendered = ->
-    $(".login-button.btn-Google").html("Sign in with @lincolnucasf.edu")
-
+    LU.app.initializeMeteorTemplates()
+    LU.app.attachMeteorEvents()
 
 
 
